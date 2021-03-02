@@ -1,2 +1,2 @@
-# erisx-sandpit
-Sandpit for prototyping ErisX integration
+# erisx
+Utilities for integration with the ErisX exchange

@@ -1,0 +1,30 @@
+Executing Funding API test against clearing.newrelease.erisx.com
+
+
+Python version - verifies the test harness
+Begin test to verify funding-request signature in external application
+Accounts request issued, received: OK. Will withdraw from: ac3ed22a-fdef-4906-b074-505205c6f377
+Linked accounts request issued, received: OK. Will place in: 6038f1aeaef9bd869d1c9118
+Build withdrawal request issued, received: OK. AuthId and RequestData retreived.
+Invoking external application to sign request data (python3 signing-example.py): Received signature: 381yXZPiYkDDDCML716sHqzXuuphF68Bi45ckyzayqf2jZTkeR3QAjXgD77gXzBCT31bHhQT887jCKt1nE1VPyBWxQCGd9vs
+Submit withdrawal request issued, received: OK. Withdrawal request completed successfully.
+
+
+C++ openssl version
+Begin test to verify funding-request signature in external application
+Accounts request issued, received: OK. Will withdraw from: ac3ed22a-fdef-4906-b074-505205c6f377
+Linked accounts request issued, received: OK. Will place in: 6038f1aeaef9bd869d1c9118
+Build withdrawal request issued, received: OK. AuthId and RequestData retreived.
+Invoking external application to sign request data (./signing-example-cpp-openssl): Received signature: 381yXZW1jZKDRghWdU5cj8CBxMcJoPahWbr5R7PKP6kznXQnHdXUm6S8n2ye429rLT16L64dmFTAkakDh6mjMu2W8EXF2RUD
+Submit withdrawal request issued, received: OK. Withdrawal request completed successfully.
+
+
+C++ cryptopp version
+Begin test to verify funding-request signature in external application
+Accounts request issued, received: OK. Will withdraw from: ac3ed22a-fdef-4906-b074-505205c6f377
+Linked accounts request issued, received: OK. Will place in: 6038f1aeaef9bd869d1c9118
+Build withdrawal request issued, received: OK. AuthId and RequestData retreived.
+Invoking external application to sign request data (./signing-example-cpp-cryptopp): Received signature: 24GaspTcAQ5e47rWaPXS6DNVkifQJtsCAW4Nm8LWmizrGFCNXy1Y1e3T5nC2Rx28b9YehTD3UAG15e5Qnsg47VPr8HRoCEjKGrUBbt3
+Submit withdrawal request issued, received: received error response from server...
+{ error: 'Incorrect password' }
+Withdrawal request failed.
