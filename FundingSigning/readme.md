@@ -9,9 +9,9 @@ Harness executes with runtest-against-erisx.sh, passing in the api key/secret/fu
 ## Signing Versions
 It currently has 3 versions it will run through:
 
-1/ python - as a proof of the harness, using the erisX provided code;
-2/ openssl - C++ signing, using the very standard openssl crypto library.
-3/ cryptopp - (work in progress) C++ signing, using the crypo++ library.
+1. python - as a proof of the harness, using the erisX provided code;
+2. openssl - C++ signing, using the very standard openssl crypto library.
+3. cryptopp - (work in progress) C++ signing, using the crypo++ library.
 
 ## Dependencies:
 
